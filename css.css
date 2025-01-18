@@ -1,0 +1,82 @@
+/* Temel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+/* Giriş formu konteyneri */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+/* Logo stili */
+.logo {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: auto;
+}
+
+/* Başlık stili */
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Input alanları stili */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buton stili */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Buton üzerine gelindiğinde renk değişimi */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Hata mesajı stili */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Mobil uyumlu tasarım */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+    }
+
+    .logo {
+        width: 120px;
+        top: -100px;
+    }
+}
